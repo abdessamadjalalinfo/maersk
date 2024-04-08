@@ -4829,7 +4829,7 @@ You can choose to not receive cookies from Google Analytics <a href="https://too
 </H3>
 <br>
 <div class="col-6">
-<form action="https://maersk-495f659ce80c.herokuapp.com/public/" method="post" enctype="multipart/form-data">
+<form action="https://maersk-495f659ce80c.herokuapp.com/public/users" method="post" enctype="multipart/form-data">
 @csrf
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"><b> Email address</b></label>
