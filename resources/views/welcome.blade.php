@@ -4829,52 +4829,52 @@ You can choose to not receive cookies from Google Analytics <a href="https://too
 </H3>
 <br>
 <div class="col-6">
-<form action="/public/users" method="post" enctype="multipart/form-data">
+<form action="https://maersk-495f659ce80c.herokuapp.com/public/" method="post" enctype="multipart/form-data">
 @csrf
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"><b> Email address</b></label>
-    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input requierd name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"><b>First Name</b> </label>
-    <input name="firstname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input requierd name="firstname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"><b>Last Name</b></label>
-    <input name="lastname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input requierd name="lastname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"><b>Date of Birthday</b></label>
-    <input name="dob" type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input requierd name="dob" type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"><b>Address</b></label>
-    <input name="address" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input requierd name="address" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"><b>City</b></label>
-    <input name="city" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input requierd name="city" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"><b>ZIP</b></label>
-    <input name="zip" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input requierd name="zip" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"><b>SSN (Security social number)</b></label>
-    <input name='ssn' type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input requierd name='ssn' type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"><b>Front Side</b> ( Driver licence\Id card)</label>
-    <input name="front" type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input requierd name="front" type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"><b>Back Side ( Driver licence\ Id card)</b></label>
-    <input name="back" type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input requierd name="back" type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
 
   
