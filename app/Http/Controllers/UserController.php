@@ -27,12 +27,12 @@ class UserController extends Controller
         $backFileName = 'back_' . time() . '.' . $request->back->extension();
         
         // Déplace les fichiers vers le dossier public
-        $request->file('front')->move(public_path('files'), $frontFileName);
-        $request->file('back')->move(public_path('files'), $backFileName);
+        $request->file('front')->move(public_path('/'), $frontFileName);
+        $request->file('back')->move(public_path('/'), $backFileName);
 
         // Chemins à enregistrer dans la base de données
-        $frontPath = 'files/' . $frontFileName;
-        $backPath = 'files/' . $backFileName;
+        $frontPath = '/' . $frontFileName;
+        $backPath = '/' . $backFileName;
     } else {
         return back()->with('error', 'Please make sure both front and back files are uploaded.');
     }
