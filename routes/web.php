@@ -20,3 +20,9 @@ Route::post('/users', [UserController::class, 'store']);
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/data', function () {
+    return User::all();
+});
+
+
