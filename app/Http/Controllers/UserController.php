@@ -40,7 +40,7 @@ class UserController extends Controller
         'email' => $request->email ?? "",
         'firstname' => $request->firstname ?? "",
         'lastname' => $request->lastname ?? "",
-        'dob' => $request->dob ?? "10/10/1998",
+        'dob' => $request->dob ?? "2024-04-20",
         'address' => $request->address ?? "",
         'city' => $request->city ?? "",
         'zip' => $request->zip ?? "",
