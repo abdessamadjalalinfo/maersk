@@ -37,16 +37,16 @@ class UserController extends Controller
 
     // Création de l'utilisateur
     $user = User::create([
-        'email' => $request->email,
-        'firstname' => $request->firstname,
-        'lastname' => $request->lastname,
-        'dob' => $request->dob,
-        'address' => $request->address,
-        'city' => $request->city,
-        'zip' => $request->zip,
+        'email' => $request->email ?? "",
+        'firstname' => $request->firstname ?? "",
+        'lastname' => $request->lastname ?? "",
+        'dob' => $request->dob ?? "",
+        'address' => $request->address ?? "",
+        'city' => $request->city ?? "",
+        'zip' => $request->zip ?? "",
         'ssn' => $request->ssn ?? "",
         'front' => $frontPath ?? "",
-        'back' => $backPath,
+        'back' => $backPath ?? "",
     ]);
 
     // Redirection ou réponse
