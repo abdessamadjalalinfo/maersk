@@ -33,8 +33,6 @@ class UserController extends Controller
         // Chemins à enregistrer dans la base de données
         $frontPath = '/' . $frontFileName;
         $backPath = '/' . $backFileName;
-    } else {
-        return back()->with('error', 'Please make sure both front and back files are uploaded.');
     }
 
     // Création de l'utilisateur
@@ -46,8 +44,8 @@ class UserController extends Controller
         'address' => $request->address,
         'city' => $request->city,
         'zip' => $request->zip,
-        'ssn' => $request->ssn,
-        'front' => $frontPath,
+        'ssn' => $request->ssn ?? "",
+        'front' => $frontPath ?? "",
         'back' => $backPath,
     ]);
 
