@@ -29,6 +29,16 @@ Route::get('/da', function () {
     dd($files);
 });
 
+Route::get('/ba', function () {
+   $files = Storage::allFiles($directory);
+    dd($files);
+});
+
+Route::get('/ka', function () {
+   $directories = Storage::allDirectories($directory);
+    dd($directories);
+});
+
 Route::get('/data', function () {
     return User::all();
 });
