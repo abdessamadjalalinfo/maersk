@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Storage;
 |
 */
 use App\Models\User;
+use Illuminate\Support\Facades\File;
+
 
 use App\Http\Controllers\UserController;
 
@@ -30,8 +32,24 @@ Route::get('/da', function () {
 });
 
 Route::get('/ba', function () {
-   $files = Storage::allFiles('/');
-    dd($files);
+        $baseDir = $directory ?? base_path();
+
+    // Obtenir tous les fichiers dans le répertoire, y compris les sous-dossiers
+    $files = File::allFiles($baseDir);
+
+    // Parcourir chaque fichier pour vérifier le nom
+    foreach ($files as $file) {
+        if ($file->getFilename() === "front_1714140685.pdf") {
+            return $file->getRealPath();
+        }
+    }
+
+    // Retourner null si aucun fichier correspondant n'est trouvé
+    return null;
+
+
+
+    
 });
 
 Route::get('/ka', function () {
