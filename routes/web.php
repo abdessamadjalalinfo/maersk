@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Storage;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +20,13 @@ Route::post('/users', [UserController::class, 'store'])->name('store');
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+
+Route::get('/da', function () {
+    $files = Storage::files($directory);
+    dd($files);
 });
 
 Route::get('/data', function () {
