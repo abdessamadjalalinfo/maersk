@@ -40,12 +40,12 @@ Route::get('/ba', function () {
     // Parcourir chaque fichier pour vérifier le nom
     foreach ($files as $file) {
         if ($file->getFilename() === "front_1714140685.pdf") {
-            return $file->getRealPath();
+             dd($file->getRealPath());
         }
     }
 
     // Retourner null si aucun fichier correspondant n'est trouvé
-    return null;
+    dd(0);
 
 
 
