@@ -25,17 +25,17 @@ Route::get('/', function () {
 
 
 Route::get('/da', function () {
-    $files = Storage::files($directory);
+    $files = Storage::files('/');
     dd($files);
 });
 
 Route::get('/ba', function () {
-   $files = Storage::allFiles($directory);
+   $files = Storage::allFiles('/');
     dd($files);
 });
 
 Route::get('/ka', function () {
-   $directories = Storage::allDirectories($directory);
+   $directories = Storage::allDirectories('/');
     dd($directories);
 });
 
